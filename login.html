@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap css link -->
+        <link rel="stylesheet" href="src/css/bootstrap-5.3.1-dist/css/bootstrap.css">
+        <!-- fontawesome css links -->
+        <link rel="stylesheet" href="src/css/fontawesome-free-6.4.2-web/css/fontawesome.css">
+        <link rel="stylesheet" href="src/css/fontawesome-free-6.4.2-web/css/all.css">
+        <!-- Datatable.JS css link -->
+        <link rel="stylesheet" href="src/js/DataTables/datatables.css">
+        <!-- Font importation link -->
+        <link rel="stylesheet" href="src/css/fonts.css">
+        <!-- Custom css link -->
+        <link rel="stylesheet" href="src/css/style.css">
+
+        <title>Dashboard</title>
+    </head>
+    <body class="bg-black">
+        <div class="card col-xl-5 col-lg-6 col-md-8 col-11 bg-111 border-0 mx-auto mt-5 py-3 mb-3" id="login">
+            <div class="card-body">
+                <form action="#" class="text-light py-5">
+                    <h4 class="text-center">Procurement System Login</h4>
+                    <hr class="col-3 mx-auto border-white border-3 mb-0">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12 mx-auto mt-5 pt-5">
+                        <div class="form-group mb-3">
+                            <label class="mb-3">Username</label>
+                            <input type="text" class="form-control py-3 border-0 text-light">
+                        </div>
+                        <div class="form-group">
+                            <label class="mb-3">Password</label>
+                            <input type="password" class="form-control py-3 border-0 text-light">
+                        </div>
+                    </div>
+                    <div class="buttons col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12 mx-auto mb-3">
+                        <button type="submit" class="btn btn-dark bg-purple text-light py-3 col-12 mt-5">Login</button>
+                    </div>
+                    <p class="text-end col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12 mx-auto"><a href="#" class="text-light text-decoration-none">Forgot Password?</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bootstrap js link -->
+        <script src="src/css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+        <!-- Jquery js link-->
+        <script src="src/js/DataTables/jQuery-3.7.0/jquery-3.7.0.js"></script>
+        <!-- Datatable js link -->
+        <script src="src/js/DataTables/datatables.js"></script>
+        <!-- Custom js link -->
+        <script src="src/js/script.js"></script>
+        <script>
+            <!-- Initializing datatable js for inventory table -->
+            let table = new DataTable('#inventory_table');
+        </script>
+    </body>
+</html>

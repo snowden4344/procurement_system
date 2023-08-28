@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap css link -->
+        <link rel="stylesheet" href="src/css/bootstrap-5.3.1-dist/css/bootstrap.css">
+        <!-- fontawesome css links -->
+        <link rel="stylesheet" href="src/css/fontawesome-free-6.4.2-web/css/fontawesome.css">
+        <link rel="stylesheet" href="src/css/fontawesome-free-6.4.2-web/css/all.css">
+        <!-- Datatable.JS css link -->
+        <link rel="stylesheet" href="src/js/DataTables/datatables.css">
+        <!-- Font importation link -->
+        <link rel="stylesheet" href="src/css/fonts.css">
+        <!-- Custom css link -->
+        <link rel="stylesheet" href="src/css/style.css">
+
+        <title>Inventory Management</title>
+    </head>
+    <body class="bg-black">
+        <!-- Sidebar: Visible on computer, collapses on tab and phone screen -->
+        <div class="sidebar col-xl-2 col-lg-2 col-md-4 col-12 bg-111 h-100 position-fixed shadow_custom" id="sidebar">
+            <div class="logo py-3 col-12 px-0 bg-box">
+                <h1 class="text-center mb-0"><i class="fa fa-box text-white"></i></h1>
+            </div>
+            <!-- Space creator -->
+            <hr class="col-10 mx-auto py-3 ">
+            <ul class="mt-5 pt-5 px-0">
+                <a href="#" class="d-block link-hover py-3 text-white text-decoration-none d-flex "><p class="col-1 d-xl-block d-lg-block d-md-block d-none mb-0"></p><p class="col-xl-11 col-lg-11 col-md-11 col-12 text-xl-start text-md-start text-lg-start text-center mb-0">Dashboard</p></a>
+                <a href="#" class="d-block link-hover py-3 text-white text-decoration-none d-flex "><p class="col-1 d-xl-block d-lg-block d-md-block d-none mb-0"></p><p class="col-xl-11 col-lg-11 col-md-11 col-12 text-xl-start text-md-start text-lg-start text-center mb-0">Requisition</p></a>
+                <a href="#" class="d-block link-hover py-3 mt-5 text-white text-decoration-none d-flex"><p class="col-1 d-xl-block d-lg-block d-md-block d-none"></p><p class="col-xl-11 col-lg-11 col-md-11 col-12 text-xl-start text-md-start text-lg-start text-center mb-0">Log out</p></a>
+            </ul>
+        </div>
+        <!-- Main content, split in two. Left part is a spacer. Takes the same width as the sidebar. Right side is the actual content -->
+        <div class="main_part d-flex py-3 justify-content-between">
+            <!-- Hamburger menu, hidden up until medium size screen. Collapses or expands sidebar -->
+            <h3 class="position-absolute d-xl-none d-lg-none d-inline" id="hamburger"><i class="fa fa-navicon mx-2 text-white"></i></h3>
+            <!-- Adds Space for aesthetics -->
+            <div class="spacer col-xl-2 col-lg-2">
+            </div>
+            <!-- Main content starts here -->
+            <div class="actual_content col-xl-10 col-lg-10 col-12">
+                <!-- Section that shows username, notifications and messages -->
+                <div class="top_tools d-flex col-11 mb-5 mx-auto">
+                    <!-- Adds Space for aesthetics -->
+                    <div class="spacer col-xl-8 col-lg-7 col-md-8 col-3"></div>
+                    <div class="actual_tools col-xl-4 col-lg-5 col-md-4 col-9 justify-content-between d-flex align-items-center">
+                        <p class="text-white fw-bold"><i class="fa fa-user text-white"></i> Chimwemwe Banda</p>
+                        <div class="other col-xl-2 col-lg-2 col-md-2 col-2 justify-content-between d-flex">
+                            <p><i class="fa fa-message text-white"></i></p>
+                            <p><i class="fa fa-bell text-white"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Page's main purpose here -->
+                <div class="inventory_management col-11 mx-auto my-3">
+                    <h2 class="text-light fw-bold">Requisition Management</h2>
+                    <div class="row my-3">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12 mb-2">
+                            <div class="card bg-dark">
+                                <div class="card-body text-light">
+                                    <div class="row align-items-center">
+                                        <div class="col-9">
+                                            <h1 class="card-title">4</h1>
+                                            <p class="card-text">Approved</p>
+                                        </div>
+                                        <h2 class="col-2"><i class="fa fa-check-circle text-success"></i></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12 mb-2">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-9">
+                                            <h1 class="card-title">4</h1>
+                                            <p class="card-text">Pending</p>
+                                        </div>
+                                        <h2 class="col-2"><i class="fa fa-clock-four text-dark"></i></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12 mb-2">
+                            <div class="card bg-222">
+                                <div class="card-body text-light">
+                                    <div class="row align-items-center">
+                                        <div class="col-9">
+                                            <h1 class="card-title">4</h1>
+                                            <p class="card-text">Rejected</p>
+                                        </div>
+                                        <h2 class="col-2"><i class="fa fa-times-circle text-danger"></i></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-12 mb-2">
+                            <div class="card bg-purple">
+                                <div class="card-body text-light">
+                                    <h1 class="card-title text-center"><i class="fa fa-plus-circle"></i></h1>
+                                    <p class="card-text text-center">New Requisition</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mt-5 mb-3 text-light">Requisition Management Table</h4>
+                    <div class="card bg-111 text-light" id="inventory_card">
+                        <div class="card-body">
+                            <!-- Table for items in inventory, organized by bootstrap and datatable.js -->
+                            <table class="table d-table rounded-2 mt-5 overflow-hidden table-borderless table-striped" id="requisition_table">
+                                <thead class="px-3">
+                                <tr>
+                                    <th class="text-light py-3 px-3">#</th>
+                                    <th class="text-light py-3">Name</th>
+                                    <th class="text-light py-3">Date Created</th>
+                                    <th class="text-light py-3">Status</th>
+                                    <th class="text-light py-3 px-3 text-center">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-light py-3 px-3"><small>8080803</small></td>
+                                    <td class="text-light py-3"><small>Chimwemwe Banda</small></td>
+                                    <td class="text-light py-3"><small>26-07-2023</small></td>
+                                    <td class="text-light py-3"><small class="text-bg-danger py-1 px-2 rounded-5">Declined</small></td>
+                                    <td class="text-light py-3 text-center px-3">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light py-3 px-3"><small>8080803</small></td>
+                                    <td class="text-light py-3"><small>Chimwemwe Banda</small></td>
+                                    <td class="text-light py-3"><small>26-07-2023</small></td>
+                                    <td class="text-light py-3"><small class="text-bg-danger py-1 px-2 rounded-5">Declined</small></td>
+                                    <td class="text-light py-3 text-center px-3">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light py-3 px-3"><small>8080803</small></td>
+                                    <td class="text-light py-3"><small>Chimwemwe Banda</small></td>
+                                    <td class="text-light py-3"><small>26-07-2023</small></td>
+                                    <td class="text-light py-3"><small class="text-bg-secondary py-1 px-2 rounded-5">Pending</small></td>
+                                    <td class="text-light py-3 text-center px-3">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light py-3 px-3"><small>8080803</small></td>
+                                    <td class="text-light py-3"><small>Chimwemwe Banda</small></td>
+                                    <td class="text-light py-3"><small>26-07-2023</small></td>
+                                    <td class="text-light py-3"><small class="text-bg-success py-1 px-2 rounded-5">Approved</small></td>
+                                    <td class="text-light py-3 text-center px-3">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light py-3 px-3"><small>8080803</small></td>
+                                    <td class="text-light py-3"><small>Chimwemwe Banda</small></td>
+                                    <td class="text-light py-3"><small>26-07-2023</small></td>
+                                    <td class="text-light py-3"><small class="text-bg-danger py-1 px-2 rounded-5">Declined</small></td>
+                                    <td class="text-light py-3 text-center px-3">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap js link -->
+        <script src="src/css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+        <!-- Jquery js link-->
+        <script src="src/js/DataTables/jQuery-3.7.0/jquery-3.7.0.js"></script>
+        <!-- Datatable js link -->
+        <script src="src/js/DataTables/datatables.js"></script>
+        <!-- Custom js link -->
+        <script src="src/js/script.js"></script>
+        <script>
+            <!-- Initializing datatable js for inventory table -->
+            let table = new DataTable('#requisition_table');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    font-family: "poppins";
+}
+.sidebar, #hamburger{
+    z-index: 999;
+}
+.bg-111{
+    background: #111;
+}
+.bg-222{
+    background: #222;
+}
+.bg-333{
+    background: #333;
+}
+.bg-box{
+    background: #101540;
+}
+.bg-purple{
+    background: #570a8e;
+}
+.link-hover{
+    border-left: 0 solid #222;
+}
+.link-hover:hover{
+    background: #333;
+    transition: .3s;
+    border-left: 1em solid #222;
+}
+#inventory_table, #chats, #requisition_table{
+    --bs-body-bg: #111;
+    --bs-table-striped-bg: #222;
+    /*--bs-light-rgb: 255, 255, 255;*/
+    min-width: max-content;
+}
+#chats{
+    --bs-body-bg: #222;
+    --bs-table-striped-bg: #333;
+    /*--bs-light-rgb: 255, 255, 255;*/
+    min-width: max-content;
+}
+#inventory_card{
+    overflow-x: scroll;
+}
+.message_container{
+    height: 550px;
+}
+
+.shadow_custom{
+    box-shadow: 0 .1em .3em #222;
+}
+form select, textarea, input{
+    background-color: #222 !important;
+    --bs-dark-rgb: 34, 34, 34;
+}
+.mes_not.bg-111{
+    background: #111;
+}
+@media (max-width: 1200px) {
+    .mes_not.bg-111{
+        background: #000;
+    }
+}
+@media (max-width: 991px) {
+    .sidebar{
+        left: -40%;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .sidebar.visible_sidebar{
+        left: 0%;
+        transition: .3s;
+        overflow: visible;
+    }
+    #msg_nav{
+        order: 1;
+    }
+    #msg_user_online{
+        order: 2;
+    }
+    #user_menu{
+        order: 3;
+    }
+
+}
+@media (max-width: 768px) {
+    .sidebar{
+        left: -100%;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .sidebar.visible_sidebar{
+        left: 0%;
+        transition: .5s;
+        overflow: visible;
+    }
+    #msg_nav{
+        order: 2;
+    }
+    #msg_user_online{
+        order: 1;
+    }
+    #user_menu{
+        order: 3;
+    }
+
+}
